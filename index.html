@@ -17,16 +17,16 @@
         </div>
         <div class="col-md-2">
             <label for="cep" class="form-label">CEP</label>
-            <input type="number" class="form-control" id="cep" >
+            <input type="number" class="form-control" id="cep" onblur="consultarCep()" >
 
         </div>
         <div class="col-md-6">
             <label for="logradouro" class="form-label">Logradouro</label>
-            <input type="text" class="form-control" id="logradouro" required>
+            <input type="text" class="form-control" id="logradouro">
         </div>
         <div class="col-md-2">
             <label for="N" class="form-label">Nº</label>
-            <input type="number" class="form-control" id="N" aria-describedby="inputGroupPrepend" required>
+            <input type="number" class="form-control" id="N" aria-describedby="inputGroupPrepend">
 
         </div>
         </div>
@@ -37,12 +37,12 @@
         </div>
           <div class="col-md-3">
             <label for="bairro" class="form-label">Bairro</label>
-            <input type="text" class="form-control" id="bairro" required>
+            <input type="text" class="form-control" id="bairro" >
 
         </div>
         <div class="col-md-1">
             <label for="uf" class="form-label">UF</label>
-            <select class="form-select" id="uf" required>
+            <select class="form-select" id="uf">
                 <option selected disabled value="">...</option>
                 <option value="AC">AC</option>
                 <option value="AL">AL</option>
@@ -76,7 +76,10 @@
         </div>
         <div class="col-md-3">
             <label for="localidade" class="form-label">Localidade</label>
-            <input type="text" class="form-control" id="localidade" required>
+            <select class="form-select" id="localidade">
+                <option value=""></option>
+            </select>
+
 
         </div>
         </div>
